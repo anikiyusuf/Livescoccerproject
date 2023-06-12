@@ -1,0 +1,40 @@
+
+<header>
+    <div class="logo">Live Soccer Tips </div>
+     <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+<nav class="nav-bar">
+    <ul>
+       <!--Everything about the link check css for changes-->
+       <li>
+          <a href="../index.ejs">Logout</a>
+       </li>
+       <li>
+          <a href="../About.ejs">About us</a>
+       </li>
+       <li>
+          <a href="../Contact.ejs">Contact us</a>
+       </li>
+       <li>
+          <a href="../Terms.ejs">Terms and condtions</a>
+       </li>
+       <li>
+         <a href="../Pay.ejs">Pay</a>
+      </li>
+    </ul>
+    
+ </nav>
+ </header>
+
+
+
+ <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function () {
+      navBar = document.querySelector(".nav-bar");
+      navBar.classList.toggle("active");
+    };
+  </script>
