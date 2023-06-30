@@ -22,7 +22,7 @@ const register = async (req,res) => {
         //  console.log(user)
    
         //  res.status(200).json(user)
-         res.redirect("/login")
+         res.redirect("/Pay")
     }catch(err){
         console.log(err)
         res.status(500).json(err)
@@ -46,7 +46,7 @@ const login = async (req, res ) => {
             console.log(token)
             res.status(200)
              .cookie('jwt' , token, { maxAge: 3600000})
-            .render('main')
+            .render('game')
             // res.json(user)
 }catch( err){
     res.status(500)

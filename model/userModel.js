@@ -30,21 +30,46 @@ const userSchema = new Schema({
     }
 })
 
-
 userSchema.pre('save', async function(next) {
-    const user = this;
+  if (!this.password) {
+    return next(new Error('Password is required.'));
+  }
+
+  try {
     const hash = await bcrypt.hash(this.password, 10);
     this.password = hash;
     next();
+  } catch (error) {
+    return next(error);
+  }
 });
-
-
 
 userSchema.methods.isValidPassword = async function(password) {
     const user = this;
     const compare = await bcrypt.compare(password, user.password);
     return compare;
 };
+
+// userSchema.pre('save', async function(next) {
+//     if (this.isModified('password') || this.isNew) {
+//       try {
+//         const hash = await bcrypt.hash(this.password, 10);
+//         this.password = hash;
+//       } catch (error) {
+//         return next(error);
+//       }
+//     }
+//     next();
+//   });
+  
+//   userSchema.methods.isValidPassword = async function(password) {
+//     try {
+//       return await bcrypt.compare(password, this.password);
+//     } catch (error) {
+//       throw error;
+//     }
+//   };
+  
 
 const UserModel = mongoose.model('user' , userSchema)
 

@@ -28,15 +28,19 @@ app.get("/" , (req, res) => {
 app.get("/Pay" , (req,res) => {
     res.render("Pay")
 })
+app.get("/Create", (req,res) => {
+    res.render("Create")
+})
 
 app.get("/Contact" , (req,res) => {
     res.render("Contact")
 })
-app.get("/Login", (req,res) => {
-    res.render("Login")
+app.get("/game", (req,res) => {
+    res.render("game")
 })
-app.get("/main" , (req,res) => {
-    res.render("main")
+
+app.get("/Sign", (req,res) => {
+    res.render("Sign")
 })
 
 app.get("/About" , (req,res)=> {

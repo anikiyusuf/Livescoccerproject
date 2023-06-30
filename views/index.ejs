@@ -1,139 +1,109 @@
 <!DOCTYPE html>
-<html>
-    <%-include('layouts/header.ejs') %>   
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Live Soccer Tips</title>
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+
 <body>
-    
-        <title>Live Soccer tips</title>
-        <style>
-            body{
-                margin: 0;
-                padding: 0;
-                background: dimgray;
-                background-size: cover;
-                background-position: center;
-                font-family: sans-serif;
-                
-            }
-
-
-        </style>
-        
-            </head>
-            <style>
-           .Signinbox{
-            width: 420px;
-            height: 620px;
-            background: #000;
-            color: #fff;
-            top: 50%;
-            left: 50%;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            box-sizing: border-box;
-            padding: 70px 30px;
-           }
-            </style>
-                <div class="Signinbox">
-                    <img src="lightsup.jpg" class="football">
-                    <h1>Create Account</h1>
-                    <form action="/auth/register" method="POST">
-                        <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" placeholder="First Name" required />
-                        <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" placeholder="Last Name" required />
-                        <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="Email" required />
-                        <label for="password">Password</label>
-                        <input type="password" name="password" placeholder="Enter Password" required />
-                        <button type="submit"> Sign Up</button>
-                         <a href="./Login.ejs">Already have an account sign in</a>
-                    </div>
-
-                        
-                    </form>
-                </div>
-            <style>
-                .football{
-                    width: 100px;
-                    height: 100px;
-                    border-radius: 50%;
-                    position: absolute;
-                    top: -50px;
-                    left: calc(50% - -50px);
-
-                }
-            </style>
-            <style>
-                h1{
-                    margin: 0;
-                    padding: 0 0 20px;
-                    text-align: center;
-                    font-size: 22px;
-                }
-            </style>
-            <style>
-                .Signinbox p{
-                    margin: 0%;
-                    padding: 0;
-                    font-weight: bold;
-                }
-            </style>
-            <style>
-                .Signinbox input{
-                    width: 100%;
-                    margin-bottom: 20px;
-                }
-            </style>
-
-            <style>
-            .Signinbox input[type="text"], input[type=password]
-            {
-                border: none;
-                border-bottom: 1px solid #fff;
-                background: transparent;
-                outline: none;
-                height: 40px;
-                color: #fff;
-                font-size: 16px;
-            }
-            </style>
-            <style>
-                .Signinbox input[type="submit"]
-                {
-                    border: none;
-                    outline: none;
-                    height: 40px;
-                    background: #fb2525;
-                    color: #fff;
-                    font-size: 18px;
-                    border-radius: 20px;
-                }
-            </style>
-            <style>
-                .Signinbox input[type="submit"]:hover
-                {
-                    cursor: pointer;
-                    background: gold;
-                    color: #000;
-
-                }
-            </style>
-            
-            <style>
-               .Yeld1{
-                color: white;
-               }
-            </style>
-
-
-               
-            
-    
-    
-    </body>
-
-    </head>
-</html>
    
-    
+   <header>
+      <div class="logo">Live soccertipsss</div>
+      <div class="hamburger">
+         <div class="line"></div>
+         <div class="line"></div>
+         <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+         <ul>
+            <li>
+               <!--Check the css for this styling-->
+               <a href="Create" class="active">Create account</a>
+            </li>
+            <li>
+               <a href="Sign">Sign in</a>
+            </li>
+            <li>
+               <a href="About">About us</a>
+            </li>
+            <li>
+               <a href="Contact">Contact us</a>
+            </li>
+            <li>
+               <a href="Terms">Terms and condtions</a>
+            </li>
+         </ul>
 
+      </nav>
+   </header>
+   <!--this is a javascript code for dragging the nav bar for mobile view-->
+   
+   <script>
+      hamburger = document.querySelector(".hamburger");
+   hamburger.onclick = function() {
+      navBar = document.querySelector(".nav-bar");
+      navBar.classList.toggle("active");
+   }
+   </script>
+
+    </nav>
+   </header>
+
+   <div id="Flow1">
+      <!--Check the css for this i stated all the html styling-->
+
+      <footer class="flow">Welcome to Live Soccer Tipsss</footer>
+      <h5>Number one innovating betting platform set in a stunning way to cater to all your betting needs.</h5>
+      <h5>Our platform is the perfect place to experience the thrill of betting on your favorite events.</h5>
+     </div>
+
+
+   <section id="Thebox1">
+      <h3>24 hours customers support</h3>
+      <a href="tel:+2348115456273">Call us at +2348115456273</a>
+      <br><br>
+      <a href="email:Saviourisaiah95@gmail.com">Livesoccertipsss@gmail.com</a>
+   </section>
+
+
+
+   <fieldset id="remove">
+
+      <div class="thing">
+
+         <h2>Todays free tips</h2>
+         <p>Arsenal vs Bunley -1x</p>
+         <p>Liverpool vs chelsea-Gg</p>
+         <p>Mancity vs Real madrid-1</p>
+   </fieldset>
+   </div>
+     <fieldset class="moron">
+   <div id="simple">
+
+      <h4>At Live soccer tipsss, we are passionate with making football punters across the globe make profit with our
+         free football betting tips provided daily! Our team of expert analysts and tipsters work effortlessly to ensure
+         football betting tips provided are safe to stake on. Free betting tips on Livesoccertipss include OVER 1.5,
+         Double Chance, Potential Risk (High Odds), Upcoming Tips and Free Tipsters Tips no wonder Livesoccertips is
+         considered as the best free soccer prediction site in the world. Our simple and unique interface makes it easy
+         for users to navigate through our website. We also provide match previews, reports and blog about everything
+         football betting to enable our users get regular updates with the happenings in the world of football via our
+         social media pages.</h4>
+   </div>
+   </div>
+   </div>
+</fieldset>
+   <footer class="Renew">
+
+      <h2>Headlines on our next game</h2>
+      <p>Follow our @social media handles</p>
+      <h4>Instagram @Livesoccertipsss</h4>
+      <h4>Twitter @Livesoccertipsss</h4>
+   </footer>
+
+
+  </body>
+  </html>

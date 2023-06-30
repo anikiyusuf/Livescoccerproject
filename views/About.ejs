@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
- <%-include('layouts/header.ejs') %>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
   <body>
-  
-       <%- include('layouts/navbar.ejs') %>
+    <header>
+      <div class="logo">Live soccertipsss</div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <!--Everything about the link check css for changes-->
+          <li>
+            <a href="Create.html" class="active">Create account</a>
+          </li>
+          <li>
+            <a href="Sign.html">Sign in</a>
+          </li>
+          <li>
+            <a href="About.html">About us</a>
+          </li>
+          <li>
+            <a href="Contact.html">Contact us</a>
+          </li>
+          <li>
+            <a href="Terms.html">Terms and condtions</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!--this is the a javascript code-->
+    <script>
+      hamburger = document.querySelector(".hamburger");
+      hamburger.onclick = function () {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+      };
+    </script>
+
     <style>
       body {
         /* background-color: black;
@@ -15,6 +55,7 @@
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.6;
+        background: white;
       }
     </style>
     <style>

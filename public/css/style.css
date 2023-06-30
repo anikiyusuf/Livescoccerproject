@@ -1,0 +1,526 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+/*This is where the index.html styling started*/
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  background: url(stadium.jpg);
+  font-weight: 500;
+  font-size: medium;
+  height: 100vh;
+}
+header,
+.Renew {
+  width: 100%;
+  height: 80px;
+  background: dodgerblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.hamburger{
+  display: none;
+}
+/*This is the nav bar icon styling for mobile view html*/
+.nav-bar ul {
+  display: flex;
+}
+.nav-bar ul li a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+
+#Thebox1 {
+  text-align: center;
+  text-decoration: navajowhite;
+  touch-action: manipulation;
+  background: white;
+  border-radius: 30%;
+}
+
+
+
+.flow{
+  font-size: 48px;
+  color: white;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+ #Flow1{
+  font-size: 30px;
+  color:white;
+  margin: 0px;
+  padding: 0px;
+ }
+
+ .thing{
+  margin: 0px;
+  padding: 0px;
+  
+}
+#Thebox1{
+  margin: 0px;
+  padding: 0px;
+
+}
+.Renew{
+  margin: 0px;
+  padding: 0px;
+}
+
+.moron{
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+.thing {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+ 
+
+
+
+
+
+.Renew {
+  background-color: white;
+}
+
+
+#remove {
+  border-radius: 29%;
+  background-color: dodgerblue;
+}
+
+/*This is where the html styling ends for laptop view*/
+
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 6px 0;
+  }
+  
+
+
+/*This is where the nav bar for html body styling started*/
+
+
+#simple {
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color:black;
+  font-size: 15px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#dum1 {
+  background-color: white;
+  box-shadow: white 10px;
+  font-weight: 500;
+  text-align: center;
+  font-style: unset;
+  width: 40%;
+  margin: 400px auto;
+}
+
+.tapin1 {
+  border-radius: 29%;
+  flex-direction: column;
+  font-weight: 500;
+  box-sizing: none;
+  text-shadow: #162938;
+  animation: blinking 1.5s infinite;
+}
+
+.nav-bar {
+  height: 0;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  background: #11101b;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.nav-bar.active {
+  height: 450px;
+}
+
+.nav-bar ul {
+  display: block;
+  width: fit-content;
+  margin: 80px auto 0 auto;
+  text-align: center;
+  transition: 0.5s;
+  opacity: 0;
+}
+.nav-bar.active ul {
+  opacity: 1;
+}
+.nav-bar ul li a {
+  margin-bottom: 12px;
+}
+}
+
+
+.nav-bar ul li a:hover {
+  color: #11101b;
+  background: white;
+}
+.nav-bar ul li a.active {
+  color: #11101b;
+  background: white;
+}
+
+
+/*THIS IS WHERE IT ENDS THE NAV BAR FOR THE MOBILE VIEW*/
+
+
+/* media queries for the body html body */
+@media only screen and (max-width: 600px) {
+  #Flow1,
+  #simple,
+  .Renew,
+  #predict1,
+  #smart1 {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    padding: 0 20px;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .Renew {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+  }
+  #Flow1{
+    color: white;
+  }
+
+  #simple {
+    font-size: 15px;
+    line-height: 2;
+    
+  }
+#simple{
+  background: white;
+}
+
+
+  .tapin1,
+  #remove {
+    border-radius: 0;
+    margin: 5px 10px;
+  }
+  #Thebox {
+    border-radius: 0;
+  margin: 5px 10px;
+  }
+
+
+  #smart1 {
+    margin-top: 10px;
+    border-radius: 0;
+  }
+  #predict1 {
+    border-radius: 0;
+  }
+}
+/*This is where the media queries ends for mobile view html body*/
+
+/*This is the create account styling this is where it started*/
+.Signinbox{
+  width: 420px;
+  height: 620px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+ }
+
+ .football{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - -50px);
+
+}
+.Signinbox p{
+  margin: 0%;
+  padding: 0;
+  font-weight: bold;
+}
+
+.Signinbox input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.Signinbox input[type="text"], input[type=password]
+{
+border: none;
+border-bottom: 1px solid #fff;
+background: transparent;
+outline: none;
+height: 40px;
+color: #fff;
+font-size: 16px;
+display: flex;
+align-items: center;
+}
+
+.Signinbox input[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.Signinbox input[type="submit"]:hover
+{
+  cursor: pointer;
+  background: gold;
+  color: #000;
+
+}
+
+.Signinbox img{
+  width: 35px;
+  cursor: pointer;
+}
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+/*Thia ia where the create account styling stopped*/
+
+/*This is where the signin styling started*/
+.Signin{
+  width: 320px;
+  height: 460px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+ }
+
+ .foot{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - -50px);
+
+}
+
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.Signin p{
+  margin: 0%;
+  padding: 0;
+  font-weight: bold;
+}
+
+.Signin input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.Signin input[type="text"], input[type=password]
+{
+
+border: none;
+border-bottom: 1px solid #fff;
+background: transparent;
+outline: none;
+height: 40px;
+color: #fff;
+font-size: 16px;
+display: flex;
+align-items: center;
+
+}
+.Signin input[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.Signin input[type="submit"]:hover
+{
+  cursor: pointer;
+  background: gold;
+  color: #000;
+
+}
+.Signin img{
+  width: 35px;
+  cursor: pointer;
+}
+/*This is where the signing styling stopped*/
+/*This is the contact us styling*/
+.hero{
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+/*This is the contact us styling*/
+   /*This is the login styling*/
+
+   .drill {
+            text-align: right;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+
+         
+
+        }
+    
+        .never {
+            font-size: 32px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 300;
+        }
+    
+        .RESET {
+            margin: 0px;
+          padding: 0px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif
+            
+
+        }
+    
+        .BET {
+            margin: 0px;
+            padding: 0px;
+            font-size: 18px;
+            font-family:Arial, Helvetica, sans-serif ;
+        }
+  
+        .ADD {
+            margin: 0px;
+            padding: 0px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        .dash {
+     text-align: center;
+     font-size: 32px;
+     background-color: brown;
+     font-weight: 700;
+     height: 50px;
+     border-radius: 28px;
+     margin: 0%;
+     padding: 0%;
+     
+
+     }
+
+     .stage{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 25px;
+      font-weight: 400;
+     }
+    
+     .GRADE{
+            font-size: 12px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: right;
+          
+        }
+        .SECTOR2{
+            background-color: white;
+        }
+        /*This is the end of the login styling*/
+        /*This is the pay styling*/
+        .pay{
+          font-size: 30px;
+          text-align: center;
+          color: white;
+          font-weight: 500;
+  
+      }
+
+      fieldset{
+        background-color: white;
+    }
+      /*This the end of the pay styling*/

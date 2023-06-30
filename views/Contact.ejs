@@ -1,8 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%-include('layouts/header.ejs') %>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+ </head>
+
+ <header>
+      <div class="logo">Live soccertips</div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <!--Everything about the link check css for changes-->
+          <li>
+            <a href="Create.html" class="active">Create account</a>
+          </li>
+          <li>
+            <a href="Sign.html">Sign in</a>
+          </li>
+          <li>
+            <a href="About.html">About us</a>
+          </li>
+          <li>
+            <a href="Contact.html">Contact us</a>
+          </li>
+          <li>
+            <a href="Terms.html">Terms and condtions</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--this is the a javascript code-->
+   
  <body>
-  <%- include('layouts/navbar.ejs') %>
    <style>
       body{
          margin: 0;
@@ -20,23 +56,21 @@
       <br>
 
       <a href="Livesoccertipss@gmail.com">Livesoccertipss@gmail.com</a>
-      <style>
-    
-         .hero{
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-         }
-      </style>
+
       <br><br>
       <a href="index.html">Homepage</a>
+  
+      <style>
 
+        
+
+      </style>
 
     
 </div>
 
      
-
+<script src="index.js"></script>
     
 </body>
 </html>
