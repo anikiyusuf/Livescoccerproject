@@ -17,41 +17,17 @@ app.use(express.static("public"));
 app.set('view engine', 'ejs')
 app.set('view engine')
 
+
+app.use("/", require("./routes/viewsRoutes"))
 app.use('/auth' , userRouter)
 
 
-// Ejs file routes
-app.get("/" , (req, res) => {
-    res.render("index")
-})
 
-app.get("/Pay" , (req,res) => {
-    res.render("Pay")
-})
-app.get("/Create", (req,res) => {
-    res.render("Create")
-})
 
-app.get("/Contact" , (req,res) => {
-    res.render("Contact")
-})
-app.get("/game", (req,res) => {
-    res.render("game")
-})
 
-app.get("/Sign", (req,res) => {
-    res.render("Sign")
-})
-
-app.get("/About" , (req,res)=> {
-    res.render("About")
-})
-app.get("/Terms" , (req,res) => {
-    res.render("Terms")
-})
-app.get("/error", (req, res) => {
-    res.render("error");
-  });  
+// app.get("/error", (req, res) => {
+//     res.render("error");
+//   });  
 
 app.use((err, req, res, next) => {
     console.log(err);
