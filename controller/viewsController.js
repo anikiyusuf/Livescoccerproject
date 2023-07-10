@@ -26,7 +26,9 @@ const Terms = async (req,res) => {
 const error = async (req,res) =>{
     res.render('error')
 }
-
+const Otp = async (req,res) =>{
+     res.render('Otp')
+}
 module.exports = {
     homePage,
     Sign,
@@ -36,5 +38,6 @@ module.exports = {
     Create,
     About,
     Contact,
-    error
+    error,
+    Otp
 }

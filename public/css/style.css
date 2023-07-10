@@ -12,7 +12,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   line-height: 1.6;
-  background: url(stadium.jpg);
+  background: url("../stadium.jpg");
   font-weight: 500;
   font-size: medium;
   height: 100vh;

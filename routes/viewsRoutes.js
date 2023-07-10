@@ -8,7 +8,8 @@ const express = require("express")
     Create,
     About,
     Contact, 
-    error
+    error,
+    Otp
 } = require("../controller/viewsController")
 const viewRouter = express.Router()
 
@@ -21,6 +22,7 @@ viewRouter.get("/create" , Create)
 viewRouter.get("/About" , About) 
 viewRouter.get("/Contact" , Contact) 
 viewRouter.get("/error", error )
+viewRouter.get("/Otp", error )
 
 
 module.exports = viewRouter
