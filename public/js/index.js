@@ -1,4 +1,7 @@
 
+
+
+
 //This is the javascript code for sign in and create account eyeicon password//
 let eyeicon = document.getElementById("eyeicon");
 let password = document.getElementById("password");
@@ -12,6 +15,8 @@ eyeicon.onclick = function(){
   eyeicon.src = "eye-close.png";
 }
 }
+
+
 //This is where it ends//
 
 
