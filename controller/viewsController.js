@@ -7,6 +7,9 @@ const About = async (req,res) => {
 const Contact = async (req,res) => {
     res.render('Contact')
 }
+const yesterday = async (req,res) => {
+    res.render('yesterday')
+}
 const Create = async (req,res) => {
     res.render('Create')
 }
