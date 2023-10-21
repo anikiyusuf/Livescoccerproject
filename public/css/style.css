@@ -279,8 +279,8 @@ header,
 
 /*This is the create account styling this is where it started*/
 .Signinbox{
-  width: 530px;
-  height: 880px;
+  width: 420px;
+  height: 630px;
   background: #000;
   color: #fff;
   top: 50%;
@@ -358,7 +358,7 @@ h1{
 /*This is where the signin styling started*/
 .Signin{
   width: 320px;
-  height: 480px;
+  height: 580px;
   background: #000;
   color: #fff;
   top: 50%;
