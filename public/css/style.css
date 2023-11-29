@@ -289,6 +289,7 @@ header,
   transform: translate(-50%, -50%);
   box-sizing: border-box;
   padding: 70px 30px;
+  border-radius: 35px;
  }
 
  .football{
@@ -367,6 +368,7 @@ h1{
   transform: translate(-50%, -50%);
   box-sizing: border-box;
   padding: 70px 30px;
+  border-radius: 35px;
  }
 
  .foot{
