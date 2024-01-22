@@ -15,7 +15,8 @@ body {
   background: url("../stadium.jpg");
   font-weight: 500;
   font-size: medium;
-  height: 100vh;
+  height: 100vh; 
+  background-color: #11101b;
 }
 header,
 .Renew {
