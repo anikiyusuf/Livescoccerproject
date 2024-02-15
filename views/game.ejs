@@ -8,14 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="swap"></p>
+    <p  id="swapp"></p>
+    <p id="swap1"></p>
 <style>
         body{
             background: url(craft.jpg);
-            margin: 0px;
-            padding: 0px; 
-            font-size: 15px;
-            height: 100vh;
+        
         }
     </style>
 
@@ -23,12 +21,23 @@
 
             function dark (){
                 setInterval(dark,1000)
-                let time = document.getElementById("swap");
+                let time = document.getElementById("swapp");
                 let d = new Date();
                 time.innerHTML= d.toLocaleTimeString();
             }
             dark();
+
+            function current(){
+            let u = new Date();
+            document.write(u.getFullYear()+";" +u.getDay()+";" +u.getMonth())
+
+            document.write(u)
+            
+            
+            }
          </script>
+
+
 
     
    

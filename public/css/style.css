@@ -446,7 +446,11 @@ align-items: center;
 /*This is the contact us styling*/
    /*This is the login styling*/
 
-   .drill {
+   #swapp{
+    width: 30%;
+   }
+
+   #drill {
             text-align: right;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 20px;
