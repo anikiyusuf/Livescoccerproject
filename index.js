@@ -39,3 +39,11 @@ app.use((err, req, res, next) => {
 app.listen(PORT , () => {
     console.log(`Server running on localhost:${PORT}`)
 })
+
+function dark (){
+  let time = document.getElementById("swap");
+  let d = new Date();
+  time.innerHTML= d.toLocaleString();
+}
+
+dark()
