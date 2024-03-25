@@ -7,3 +7,7 @@
   box-sizing: border-box;
 }
 /*This is where the index.html styling started*/
+/* This is the header styling */
+header{
+  background: linear-gradient(240deg,rgb(76, 124, 173), rgba(207, 179, 179, 0.858));
+}
